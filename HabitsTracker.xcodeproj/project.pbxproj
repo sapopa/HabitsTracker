@@ -11,6 +11,12 @@
 		B67672922A86ED4300E7CAC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67672912A86ED4300E7CAC6 /* ContentView.swift */; };
 		B67672942A86ED4500E7CAC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67672932A86ED4500E7CAC6 /* Assets.xcassets */; };
 		B67672972A86ED4500E7CAC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67672962A86ED4500E7CAC6 /* Preview Assets.xcassets */; };
+		B676729E2A8822EB00E7CAC6 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676729D2A8822EB00E7CAC6 /* AddHabitView.swift */; };
+		B67672A02A88273200E7CAC6 /* PeriodOfTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676729F2A88273200E7CAC6 /* PeriodOfTime.swift */; };
+		B67672A22A882B2600E7CAC6 /* CustomComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67672A12A882B2600E7CAC6 /* CustomComponents.swift */; };
+		B67672A42A88368200E7CAC6 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67672A32A88368200E7CAC6 /* Habit.swift */; };
+		B67672A62A88372B00E7CAC6 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67672A52A88372B00E7CAC6 /* Habits.swift */; };
+		B67672A82A8909AD00E7CAC6 /* HabitDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67672A72A8909AD00E7CAC6 /* HabitDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		B67672912A86ED4300E7CAC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B67672932A86ED4500E7CAC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B67672962A86ED4500E7CAC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B676729D2A8822EB00E7CAC6 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		B676729F2A88273200E7CAC6 /* PeriodOfTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodOfTime.swift; sourceTree = "<group>"; };
+		B67672A12A882B2600E7CAC6 /* CustomComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponents.swift; sourceTree = "<group>"; };
+		B67672A32A88368200E7CAC6 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		B67672A52A88372B00E7CAC6 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
+		B67672A72A8909AD00E7CAC6 /* HabitDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				B676728F2A86ED4300E7CAC6 /* HabitsTrackerApp.swift */,
 				B67672912A86ED4300E7CAC6 /* ContentView.swift */,
+				B67672A72A8909AD00E7CAC6 /* HabitDetailsView.swift */,
+				B67672A32A88368200E7CAC6 /* Habit.swift */,
+				B676729D2A8822EB00E7CAC6 /* AddHabitView.swift */,
+				B67672A52A88372B00E7CAC6 /* Habits.swift */,
+				B67672A12A882B2600E7CAC6 /* CustomComponents.swift */,
+				B676729F2A88273200E7CAC6 /* PeriodOfTime.swift */,
 				B67672932A86ED4500E7CAC6 /* Assets.xcassets */,
 				B67672952A86ED4500E7CAC6 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67672A42A88368200E7CAC6 /* Habit.swift in Sources */,
+				B67672A02A88273200E7CAC6 /* PeriodOfTime.swift in Sources */,
+				B67672A82A8909AD00E7CAC6 /* HabitDetailsView.swift in Sources */,
 				B67672922A86ED4300E7CAC6 /* ContentView.swift in Sources */,
 				B67672902A86ED4300E7CAC6 /* HabitsTrackerApp.swift in Sources */,
+				B676729E2A8822EB00E7CAC6 /* AddHabitView.swift in Sources */,
+				B67672A22A882B2600E7CAC6 /* CustomComponents.swift in Sources */,
+				B67672A62A88372B00E7CAC6 /* Habits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

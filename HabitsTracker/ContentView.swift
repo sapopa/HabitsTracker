@@ -8,15 +8,53 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isHabitsFormShown = false;
+    @StateObject private var habits = Habits()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                List {
+                    ForEach(habits.list.reversed()) { habit in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(habit.name)
+                                    .font(.headline)
+                                    .foregroundColor(habit.isGoodHabit ? .green : .red)
+                                Text("\(habit.numberOfOccurences) times this \(habit.timeframe.rawValue.lowercased())")
+                                    .font(.subheadline)
+                            }
+                            NavigationLink {
+                                HabitDetailsView(habit: habit, habits: habits)
+                            } label: {}
+                        }
+                    }
+                    .onDelete(perform: removeHabits)
+                }
+            }
+            .navigationTitle("Habits Tracker")
+            .toolbar {
+                Button {
+                    isHabitsFormShown.toggle()
+                } label: {
+                    Image(systemName: "plus")
+                }
+                .padding(.top)
+            }
+            .sheet(isPresented: $isHabitsFormShown) {
+                AddHabitView(habits: habits)
+            }
         }
-        .padding()
     }
+    
+    func removeHabits(at offsets: IndexSet){
+        let habit = habits.list.reversed()[offsets.first!]
+        if let index = habits.list.firstIndex(of: habit) {
+            habits.list.remove(at: index)
+        }
+    }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
